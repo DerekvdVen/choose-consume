@@ -3,6 +3,20 @@ Nestle, one of the world's largest and most notorious multinational corporations
 
 This repository represents an effort to empower consumers in making more informed and ethical choices when it comes to the products they purchase, for example, by exposing Nestle's questionable practices and offering alternatives. In the future, the scope of this app may expand to encompass other major corporations that engage in unethical practices, further amplifying the consumer's ability to make responsible choices in a world dominated by giant conglomerates.
 
+Milk Alternatives (Infant Formula Controversy):
+[Baby Milk Action - Nestle and the Baby Killer
+The Guardian - The Baby Killers](https://www.babymilkaction.org/nestlefree)
+
+Stealing Water:
+https://www.theguardian.com/global/2018/oct/04/ontario-six-nations-nestle-running-water
+
+Child Labor in Cocoa Production:
+https://www.bbc.com/news/world-africa-18644870
+
+Claiming Water Shouldn't Be a Universal Right:
+https://aarhusclearinghouse.unece.org/news/nestle-ceo-water-not-a-human-right-should-be-privatized
+https://www.youtube.com/watch?v=mTnJTyeAUA8
+
 The app will consist of a few different parts:
 1. Import a picture from camera or files, locate the barcode and read the manufacturer code. 
 2. Make an API call to https://barcodeapi.org/index.html#auto
