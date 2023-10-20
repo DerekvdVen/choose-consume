@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "nestle-sucks"
+version = "0.1.0"
+description = ""
+authors = ["Derek van de Ven <derek.vandeven@wur.nl>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+Kivy = "^2.2.1"
+plyer = "^2.1.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
