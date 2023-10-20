@@ -7,6 +7,11 @@ from kivy.uix.label import Label
 from kivy.uix.gridlayout import GridLayout
 from kivy.uix.textinput import TextInput
 
+from kivy.uix.image import Image
+from kivy.core.image import Image as CoreImage
+
+
+
 
 class LoginScreen(GridLayout):
 
@@ -19,6 +24,7 @@ class LoginScreen(GridLayout):
         self.add_widget(Label(text='password'))
         self.password = TextInput(password=True, multiline=False)
         self.add_widget(self.password)
+        
 
 
 class MyApp(App):
