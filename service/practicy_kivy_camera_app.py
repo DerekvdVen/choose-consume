@@ -1,5 +1,7 @@
+import json
 import kivy
 kivy.require('2.2.1') # replace with your current kivy version !
+
 
 from pyzbar.pyzbar import decode
 import zxingcpp
@@ -9,6 +11,8 @@ from kivy.app import App
 from kivy.lang import Builder
 from kivy.uix.boxlayout import BoxLayout
 import time
+
+from get_product_by_barcode import get_product_inf_by_barcode
 
 Builder.load_string('''
 <CameraClick>:
@@ -59,10 +63,40 @@ class CameraClick(BoxLayout):
         frame = camera.texture.pixels
         # print(frame)
 
+        # test image
+        image_name = "./data/test_image.png"
+
         result_zbar = decode(cv2.imread(image_name))
         result_zxing = zxingcpp.read_barcodes(cv2.imread(image_name))
         print('zxing: ', result_zxing)
         print('zbar: ', result_zbar)
+
+        results = None
+        if result_zbar:
+            barcode = result_zbar[0].data.decode("utf-8")
+            results = get_product_inf_by_barcode(barcode)
+        elif result_zxing:
+            barcode = result_zxing[0].data.decode("utf-8")
+            results = get_product_inf_by_barcode(barcode)
+
+        results = json.loads(results)
+        if results:
+            product_name = results['products'][0]['title']
+            brand = results['products'][0]['brand']
+            # country_of_origin = results['products'][0]['country_of_origin']
+            nutrition_facts = results['products'][0]['nutrition_facts']
+            ingredients = results['products'][0]['ingredients']
+            # allergens = results['products'][0]['allergens']
+
+            print('product name: ', product_name)
+            print('brand: ', brand)
+            # print('country of origin: ', country_of_origin)
+            print('nutrition facts: ', nutrition_facts)
+            print('ingredients: ', ingredients)
+            # print('allergens: ', allergens)
+
+        
+        
 
         # todo
         # use cv2 to detect the barcode
