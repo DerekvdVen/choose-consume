@@ -1,6 +1,9 @@
 import kivy
 kivy.require('2.2.1') # replace with your current kivy version !
 
+from pyzbar.pyzbar import decode
+import zxingcpp
+
 import cv2
 from kivy.app import App
 from kivy.lang import Builder
@@ -54,7 +57,12 @@ class CameraClick(BoxLayout):
 
         camera.export_to_png(image_name)
         frame = camera.texture.pixels
-        print(frame)
+        # print(frame)
+
+        result_zbar = decode(cv2.imread(image_name))
+        result_zxing = zxingcpp.read_barcodes(cv2.imread(image_name))
+        print('zxing: ', result_zxing)
+        print('zbar: ', result_zbar)
 
         # todo
         # use cv2 to detect the barcode

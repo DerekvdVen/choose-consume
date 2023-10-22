@@ -8,6 +8,7 @@ authors = ["Derek van de Ven <derek.vandeven@wur.nl>"]
 python = "^3.10"
 Kivy = "^2.2.1"
 plyer = "^2.1.0"
+pyzbar = "^0.1.9"
 
 [tool.poetry.dev-dependencies]
 
