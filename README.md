@@ -6,7 +6,7 @@ YouBrand attempts to create an app which replaces product branding and labeling 
 ### Show only the ingredients you're interested in
 Protein count, allergy's, meat or dairy
 
-## Translate ingredient list to your language
+### Translate ingredient list to your language
 Struggling with the language on the packaging because it's in tiny font or not present? Use YouBrand
 
 ### Show if a big company with controversial reputations is behind your product:
