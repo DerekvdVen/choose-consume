@@ -1,4 +1,12 @@
-# nestle-sucks
+# YouBrand
+YouBrand attempts to create an app which replaces product branding and labeling with a personalized list of product details you find interesting. No more arduously looking through ingredients and reduce the affect of companies' marketing on your consumer choice. 
+
+## Examples of items in YouBrand
+
+### Show only the ingredients you're interested in
+Protein count, allergy's, meat or dairy
+
+### Show if a big evil company is behind your product:
 Nestle, one of the world's largest and most notorious multinational corporations, has a well-documented history of wrongdoing that spans decades. From unethical marketing of infant formula to profiting from stolen water, exploiting child labor in cocoa production, to their audacious claims that water should not be a universal human right, Nestle has consistently raised ethical concerns. The colossal conglomerate often hides behind an array of different brand names, makeing it difficult for consumers to join in boycotts and make ethical decisions on what the consume. 
 
 This repository represents an effort to empower consumers in doing just that. In the future, the scope of this app may expand to encompass other major corporations that engage in unethical practices, but for now we'll just do Nestle. 
